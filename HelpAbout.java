@@ -6,7 +6,6 @@ public class HelpAbout {
 	JFrame f;
 	HelpAbout() {
 		f = new JFrame("About UED");
-		JFrame f = new JFrame("About UED");
 		TextArea tf  = new TextArea(10,60);
 		tf.setText("\t\tAbout UED\n" +
 			"\n" +
