@@ -1,5 +1,5 @@
-import com.sun.java.swing.*;
-import com.sun.java.swing.table.*;
+import javax.swing.*;
+import javax.swing.table.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.*;
@@ -19,7 +19,7 @@ public class UedView extends JPanel implements Observer {
         table.setCellEditor(new DefaultCellEditor(new JTextField())); 
 
         // Construct a scroll pane and add the JTable into it. 
-		JScrollPane scrollPane = JTable.createScrollPaneForTable(table);
+		JScrollPane scrollPane = new JScrollPane(table);
 
 		// Add the scroll pane to this panel.
 		setLayout(new GridLayout(1, 0)); 
