@@ -1,26 +1,32 @@
 package ued.model;
 
-import java.util.*;
+import java.util.List;
+import java.util.Observable;
+import java.util.Vector;
+
+import ued.unix.PW;
+import ued.unix.PWFileReader;
+import ued.unix.PWReader;
 
 /** UedModel is the list of users and groups. */
 public class UedModel extends Observable {
 	/** The list of users */
-	Vector u;
+	List<PW> u;
 	/** The list of groups */
-	Vector g;
+	List<?> g;
 
 	UedModel() {
-		u = new Vector();
+		u = new Vector<PW>();
 		PWReader p = new PWFileReader("./passwd.txt");
 		PW user;
 		while ((user=p.getpwent()) != null)
-			u.addElement(user);
+			u.add(user);
 		// same for groups!
 		// while ((group=...)) != null)
 		//	v.addItem(group);
 	}
 
-	Vector getUserVector() {
+	List<PW> getUsers() {
 		return u;
 	}
 }

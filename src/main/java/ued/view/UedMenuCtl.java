@@ -1,9 +1,18 @@
 package ued.view;
 
-import java.awt.*;
-import java.awt.event.*;
-import javax.swing.*;
-import java.util.*;
+import java.awt.Frame;
+import java.awt.Menu;
+import java.awt.MenuBar;
+import java.awt.MenuItem;
+import java.awt.MenuShortcut;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.MissingResourceException;
+import java.util.ResourceBundle;
+
+import javax.swing.JOptionPane;
+
+import ued.model.UedModel;
 
 public class UedMenuCtl extends MenuBar {
 	UedModel um;

@@ -1,7 +1,8 @@
 package ued.unix;
 
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 
 public abstract class PWReader {
 	/** The file we use for reading */

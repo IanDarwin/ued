@@ -1,7 +1,5 @@
 package ued.unix;
 
-import java.io.*;
-import java.util.*;
 
 /**
  * A PWReader subclass that tries to read the binary data from mkpwdb.

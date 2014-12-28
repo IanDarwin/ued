@@ -1,7 +1,5 @@
 package ued.unix;
 
-import java.io.*;
-import java.util.*;
 
 public class PW {
 	/** The name of the standard password file */

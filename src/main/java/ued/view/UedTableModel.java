@@ -1,7 +1,10 @@
 package ued.view;
 
-import javax.swing.table.*;
-import java.util.*;
+import java.util.Vector;
+
+import javax.swing.table.AbstractTableModel;
+
+import ued.unix.PW;
 
 public class UedTableModel extends AbstractTableModel {
 	/** The vector of users, each a PW object */

@@ -1,10 +1,17 @@
 package ued.view;
 
-import javax.swing.*;
-import javax.swing.table.*;
-import java.awt.*;
-import java.awt.event.*;
-import java.util.*;
+import java.awt.Dimension;
+import java.awt.GridLayout;
+import java.util.Observable;
+import java.util.Observer;
+import java.util.Vector;
+
+import javax.swing.BorderFactory;
+import javax.swing.DefaultCellEditor;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.JTextField;
 
 public class UedView extends JPanel implements Observer {
 

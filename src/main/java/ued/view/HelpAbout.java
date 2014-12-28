@@ -1,8 +1,10 @@
 package ued.view;
 
-import java.awt.*;
-import java.awt.event.*;
-import com.sun.java.swing.*;
+import java.awt.TextArea;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
+import javax.swing.JFrame;
 
 public class HelpAbout {
 	JFrame f;
