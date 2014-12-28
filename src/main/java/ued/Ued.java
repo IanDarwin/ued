@@ -1,6 +1,19 @@
-import java.awt.*;
-import java.awt.event.*;
-import javax.swing.*;
+package ued;
+
+import java.awt.BorderLayout;
+import java.awt.Container;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTabbedPane;
+import javax.swing.SwingUtilities;
+import javax.swing.UIManager;
+
+import ued.model.UedModel;
+import ued.view.UedMenuCtl;
+import ued.view.UedView;
 
 /** Ued is the simple main program for Ued */
 public class Ued {
@@ -27,7 +40,7 @@ public class Ued {
 		UedModel m = new UedModel();
 
 		// Construct the User View
-		UedView uv = new UedView(m.getUserVector());
+		UedView uv = new UedView(m.getUsers());
 
 		// Construct the Group View
 		// GroupView gv = new GroupView(??);

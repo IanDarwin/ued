@@ -1,5 +1,6 @@
 package ued.view;
 
+import java.util.List;
 import java.util.Vector;
 
 import javax.swing.table.AbstractTableModel;
@@ -8,10 +9,10 @@ import ued.unix.PW;
 
 public class UedTableModel extends AbstractTableModel {
 	/** The vector of users, each a PW object */
-	Vector u = null;
+	List<PW> u = null;
 
 	/** Construct a UedTableModel given the list of PW's */
-	UedTableModel(Vector users) {
+	UedTableModel(List<PW> users) {
 		u = users;
 	}
 
@@ -32,7 +33,7 @@ public class UedTableModel extends AbstractTableModel {
 
 	/** Returns a data value for the cell at columnIndex and rowIndex. */
 	public Object getValueAt(int row, int col)  {
-		PW user = (PW)u.elementAt(row);
+		PW user = u.get(row);
 		switch(col) {
 			case 0: return user.pw_nam;
 			case 1: return user.pw_passwd;
@@ -52,7 +53,7 @@ public class UedTableModel extends AbstractTableModel {
 
 	/** Set a value in a cell. */
 	public void setValueAt(Object val, int row, int col)  {
-		PW user = (PW)u.elementAt(row);
+		PW user = u.get(row);
 		switch(col) {
 			case 0: user.pw_nam = (String)val; return;
 			case 1: user.pw_passwd = (String)val; return;

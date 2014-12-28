@@ -3,6 +3,7 @@ package ued.unix;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 public abstract class PWReader {
 	/** The file we use for reading */
@@ -30,5 +31,9 @@ public abstract class PWReader {
 			throw new IllegalArgumentException("Can't open PWReaderfile " +
 				pwfName + "(" + e.getMessage() + ")");
 		}
+	}
+
+	public PWReader(InputStreamReader inputStreamReader) {
+		pwf = new BufferedReader(inputStreamReader);
 	}
 }

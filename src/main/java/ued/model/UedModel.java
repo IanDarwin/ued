@@ -15,7 +15,7 @@ public class UedModel extends Observable {
 	/** The list of groups */
 	List<?> g;
 
-	UedModel() {
+	public UedModel() {
 		u = new Vector<PW>();
 		PWReader p = new PWFileReader("./passwd.txt");
 		PW user;
@@ -26,7 +26,7 @@ public class UedModel extends Observable {
 		//	v.addItem(group);
 	}
 
-	List<PW> getUsers() {
+	public List<PW> getUsers() {
 		return u;
 	}
 }

@@ -1,16 +1,23 @@
 package ued.test;
 
-import org.junit.*;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertNotNull;
 
-import ued.unix.*;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+
+import org.junit.Test;
+
+import ued.unix.PW;
+import ued.unix.PWFileReader;
+import ued.unix.PWReader;
 
 /** Simple program to test the PW class */
 public class PWTest {
 
 	@Test
 	public void testReader() {
-		PWReader pr = new PWFileReader("./passwd.txt");
+		InputStream is = getClass().getResourceAsStream("/passwd.txt");
+		PWReader pr = new PWFileReader(new InputStreamReader(is));
 
 		PW root = pr.getpwnam("root");
 		assertNotNull("Entry for 'root' missing?", root);

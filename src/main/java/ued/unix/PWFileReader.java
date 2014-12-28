@@ -1,6 +1,7 @@
 package ued.unix;
 
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class PWFileReader extends PWReader {
 	public static final String SEP = ":";
@@ -12,6 +13,10 @@ public class PWFileReader extends PWReader {
 	}
 	public PWFileReader(String fn) {
 		super(fn);
+	}
+
+	public PWFileReader(InputStreamReader inputStreamReader) {
+		super(inputStreamReader);
 	}
 
 	// READING METHODS

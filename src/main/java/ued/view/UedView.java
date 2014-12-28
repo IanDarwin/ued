@@ -2,9 +2,9 @@ package ued.view;
 
 import java.awt.Dimension;
 import java.awt.GridLayout;
+import java.util.List;
 import java.util.Observable;
 import java.util.Observer;
-import java.util.Vector;
 
 import javax.swing.BorderFactory;
 import javax.swing.DefaultCellEditor;
@@ -13,12 +13,14 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.JTextField;
 
+import ued.unix.PW;
+
 public class UedView extends JPanel implements Observer {
 
-    Vector users = null;
+	List<PW> users = null;
 
 	/** Construct a UedView */
-    public UedView(Vector vu) {
+    public UedView(List<PW> vu) {
 
 		users = vu;
 		setBorder(BorderFactory.createTitledBorder("User Editor View (read-only)"));

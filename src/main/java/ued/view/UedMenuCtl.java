@@ -19,7 +19,7 @@ public class UedMenuCtl extends MenuBar {
 	Frame    uf;
 	UedView  uv;
 
-	UedMenuCtl(UedModel um, Frame uf, UedView uv) {
+	public UedMenuCtl(UedModel um, Frame uf, UedView uv) {
 		this.um = um;
 		this.uf = uf;
 		this.uv = uv;
