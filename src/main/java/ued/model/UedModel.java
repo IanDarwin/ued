@@ -1,3 +1,5 @@
+package ued.model;
+
 import java.util.*;
 
 /** UedModel is the list of users and groups. */

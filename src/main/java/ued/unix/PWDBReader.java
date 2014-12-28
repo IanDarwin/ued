@@ -1,6 +1,11 @@
+package ued.unix;
+
 import java.io.*;
 import java.util.*;
 
+/**
+ * A PWReader subclass that tries to read the binary data from mkpwdb.
+ */
 public class PWDBReader extends PWReader {
 
 	/** An un-named Static Code Block is performed as part of 

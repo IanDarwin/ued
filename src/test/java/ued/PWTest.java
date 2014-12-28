@@ -1,3 +1,7 @@
+package ued.test;
+
+import ued.unix.*;
+
 /** Simple program to test the PW class */
 public class PWTest {
 	public static void main(String av[]) {

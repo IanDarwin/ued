@@ -1,3 +1,5 @@
+package ued.view;
+
 import java.awt.*;
 import java.awt.event.*;
 import com.sun.java.swing.*;
