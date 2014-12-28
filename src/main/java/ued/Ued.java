@@ -24,18 +24,6 @@ public class Ued {
 		// Construct a Frame to contain the View
 		JFrame f = new JFrame("Ued: A Unix User Editor Wannabe");
 
-		// Start with the Java look-and-feel, if possible
-		String lnfName;
-		//lnfName = "com.sun.java.swing.plaf.metal.MetalLookAndFeel";
-		lnfName = "com.sun.java.swing.plaf.windows.WindowsLookAndFeel";
-		try {
-			UIManager.setLookAndFeel(lnfName);
-			SwingUtilities.updateComponentTreeUI(f);
-		} catch (Exception e) {
-			System.out.println(e);
-			// we don't care, program still works with default Look-n-feel
-		}
-
 		// Construct the data model
 		UedModel m = new UedModel();
 
