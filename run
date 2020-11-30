@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# sh/ksh/bash/csh script to run the thing.
+
+java -jar target/ued-1.0.1-SNAPSHOT.jar
