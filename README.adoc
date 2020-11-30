@@ -6,6 +6,8 @@ display it, but doesn't let you make changes yet.
 It was never intended to grow into a full-blown user editor,
 but of course it might.
 
+image::images/ued.png[]
+
 At present, it only reads a file named "passwd.txt", which is
 in the _src/test_ tree and symlinked into "." so you can just do:
 
