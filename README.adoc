@@ -1,0 +1,6 @@
+= Ued
+
+This is a demo program that I mainly wrote for the May, 1999 _Linux Journal_
+article on Java GUI Development. It can read a standard password file and
+display it, but doesn't let you make changes yet.
+If you extend it to do that, please send a pull request - thank you!
