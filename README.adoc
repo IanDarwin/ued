@@ -1,6 +1,20 @@
-= Ued
+= Ued: Outline of a Unix password file editor
 
 This is a demo program that I mainly wrote for the May, 1999 _Linux Journal_
 article on Java GUI Development. It can read a standard password file and
 display it, but doesn't let you make changes yet.
-If you extend it to do that, please send a pull request - thank you!
+
+Well, in fact, it only reads a file named "passwd.txt", but that file is
+in the test tree, so you probably want to do:
+
+	mvn package
+	ln -s src/test/resources/passwd.txt .
+	java -jar target/ued-1.0.1-SNAPSHOT.jar
+
+== TODO items
+
+If you extend it to have an Open function, and/or to save the file, or any
+of the TODO items in the code, please send a pull request - thank you!
+
+Have an interface do deal with the various shadow file formats on Linux,
+BSD, etc.. Maybe generalize even more to include the macOS mechanism.
