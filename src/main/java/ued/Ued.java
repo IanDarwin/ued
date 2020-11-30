@@ -30,8 +30,11 @@ public class Ued {
 		// Construct the User View
 		UedView uv = new UedView(m.getUsers());
 
-		// Construct the Group View
+		// XXX Construct the Group View
 		// GroupView gv = new GroupView(??);
+
+		// XXX Construct the Properties View
+		// PropsView gv = new PropsView(??);
 
 		// Build the Menu Controller and install it
 		UedMenuCtl mc = new UedMenuCtl(m, f, uv);
@@ -46,10 +49,8 @@ public class Ued {
 	    });
 
 		// The Main Screen is a tabbed panel with several views
-		Container c = f.getContentPane();
-
 		JTabbedPane mainPane = new JTabbedPane();
-		c.add(BorderLayout.CENTER, mainPane);
+		f.getContentPane().add(BorderLayout.CENTER, mainPane);
 		mainPane.addTab("Users", uv);
 		mainPane.addTab("Groups", new JLabel("Not Written Yet", JLabel.CENTER));
 		mainPane.addTab("Properties", new JLabel("Not Written Yet", JLabel.CENTER));
